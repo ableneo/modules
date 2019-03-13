@@ -1,0 +1,70 @@
+{
+  "name": "eslint-config-ableneo",
+  "version": "0.0.0",
+  "description": "@ableneo/tools/eslint-config-ableneo",
+  "main": "src/.eslintrc.js",
+  "author": "Marcel Mokoš <https://github.com/marcelmokos>",
+  "keywords": [
+    "eslint",
+    "airbnb config",
+    "prettier",
+    "react",
+    "jest",
+    "flow",
+    "flowtype",
+    "format",
+    "pretty-print",
+    "code-style"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:changed": "yarn test --onlyChanged --passWithNoTests --silent",
+    "test:watch": "yarn test --watch",
+    "test:update": "yarn test --update",
+    "test:coverage": "yarn test:changed --coverage --verbose",
+    "eslintrc:check:yml": "eslint --print-config .eslintrc.yml | eslint-config-prettier-check",
+    "eslintrc:yml-to-js": "echo '// generated file from .eslintrc.yml\nmodule.exports =' > src/.eslintrc.js && js-yaml .eslintrc.yml >> src/.eslintrc.js",
+    "eslintrc:check:js": "eslint --print-config src/.eslintrc.js | eslint-config-prettier-check",
+    "eslintrc:prepare": "yarn run eslintrc:check:yml && yarn run eslintrc:yml-to-js && yarn run eslintrc:check:js",
+    "build": "yarn run eslintrc:prepare",
+    "prepublishOnly": "yarn run build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.5.0",
+    "eslint": "5.15.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-flowtype": "^3.4.2",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.5.0",
+    "js-yaml": "^3.12.2",
+    "prettier": "^1.16.4"
+  },
+  "peerDependencies": {
+    "babel-eslint": "^10.0.0",
+    "eslint": "^4.19.1 || ^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-flowtype": "^3.4.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-jest": "^22.0.0",
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.12.4"
+  },
+  "engines": {
+    "node": "^6.14.0 || ^8.10.0 || >=9.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ableneo/tools/packages/eslint-config/"
+  }
+}
