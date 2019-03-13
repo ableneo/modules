@@ -3466,7 +3466,7 @@ escodegen@^1.9.1:
     source-map "~0.6.1"
 
 "eslint-config-ableneo@file:packages/eslint-config-ableneo":
-  version "0.0.0"
+  version "0.0.1"
 
 eslint-config-airbnb-base@^13.1.0:
   version "13.1.0"

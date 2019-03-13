@@ -1,10 +1,10 @@
 ---
-to: packages/<%= name.toLowerCase() %>/package.json
+to: packages/<%= h.changeCase.paramCase(name) %>/package.json
 ---
 {
-  "name": "@ableneo/<%= name.toLowerCase() %>",
+  "name": "@ableneo/<%= h.changeCase.paramCase(name) %>",
   "version": "0.0.0",
-  "description": "@ableneo/tools/<%= name.toLowerCase() %>",
+  "description": "@ableneo/tools/<%= h.changeCase.paramCase(name) %>",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "author": "Marcel Mokoš <https://github.com/marcelmokos>",
@@ -26,7 +26,7 @@ to: packages/<%= name.toLowerCase() %>/package.json
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ableneo/tools/packages/<%= name.toLowerCase() %>/"
+    "url": "https://github.com/ableneo/tools/packages/<%= h.changeCase.paramCase(name) %>/"
   }
 }
 
