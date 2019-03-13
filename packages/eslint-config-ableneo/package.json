@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-ableneo",
   "version": "0.0.1",
-  "description": "@ableneo/tools/eslint-config-ableneo",
+  "description": "Eslint config with prettier @ableneo/tools",
   "main": "src/.eslintrc.js",
   "author": "Marcel Mokoš <https://github.com/marcelmokos>",
   "keywords": [
