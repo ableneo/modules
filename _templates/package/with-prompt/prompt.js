@@ -5,6 +5,6 @@ module.exports = [
   {
     type: "input",
     name: "name",
-    message: "What's the NAME of your package? (@ableneo/NAME)",
+    message: "What's the NAME of your package? (@ableneo/NAME) use param-case",
   },
 ];

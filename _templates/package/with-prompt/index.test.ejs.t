@@ -1,10 +1,10 @@
 ---
-to: packages/<%= name.toLowerCase() %>/src/index.test.js
+to: packages/<%= h.changeCase.paramCase(name) %>/src/index.test.js
 ---
-import indexFn from "./";
+import indexFn from ".";
 
 it("indexFn", () => {
   expect(indexFn()).toBe(null);
-})
+});
 
 
