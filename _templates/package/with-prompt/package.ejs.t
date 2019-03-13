@@ -26,7 +26,7 @@ to: packages/<%= h.changeCase.paramCase(name) %>/package.json
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ableneo/tools/packages/<%= h.changeCase.paramCase(name) %>/"
+    "url": "https://github.com/ableneo/tools/tree/master/packages/<%= h.changeCase.paramCase(name) %>"
   }
 }
 

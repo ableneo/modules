@@ -65,6 +65,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ableneo/tools/packages/eslint-config/"
+    "url": "https://github.com/ableneo/tools/tree/master/packages/eslint-config-ableneo"
   }
 }
