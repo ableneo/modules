@@ -1,7 +1,10 @@
 # eslint-config-ableneo
 
-[![npm version](https://img.shields.io/npm/v/eslint-config-ableneo.svg?style=flat)](https://www.npmjs.com/package/eslint-config-ableneo) [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![Build Status](https://travis-ci.org/ableneo/eslint-config-ableneo.svg?branch=master)](https://travis-ci.org/ableneo/eslint-config-ableneo) [![dependency](https://david-dm.org/ableneo/eslint-config-ableneo/status.svg)](https://david-dm.org/ableneo/eslint-config-ableneo) [![devDep](https://david-dm.org/ableneo/eslint-config-ableneo/dev-status.svg)](https://david-dm.org/ableneo/eslint-config-ableneo?type=dev)
-[![Known Vulnerabilities](https://snyk.io/test/github/ableneo/eslint-config-ableneo/badge.svg)](https://snyk.io/test/github/ableneo/eslint-config-ableneo)
+
+[![npm version](https://img.shields.io/npm/v/eslint-config-ableneo.svg?style=flat)](https://www.npmjs.com/package/eslint-config-ableneo)
+[![Build Status](https://travis-ci.org/ableneo/tools)](https://travis-ci.org/ableneo/eslint-config-ableneo)
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier) 
 
 This package provides Airbnb's [.eslintrc.yml](https://github.com/ableneo/eslint-config-ableneo/blob/master/.eslintrc.yml) with prettier as an extensible shared config.
 

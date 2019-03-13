@@ -24,6 +24,7 @@
     "lint:img": "find src -iname '*.gif' -o -iname '*.jpg' -o -iname '*.png' -o -iname '*.jpeg' -o -iname '*.svg' | xargs imagemin-lint-staged",
     "lint:staged": "eslint --fix --max-warnings=0",
     "new-version": "lerna version --conventional-commits --yes",
+    "publish": "lerna publish from-package",
     "diff": "lerna diff",
     "build": "lerna run build",
     "watch": "yarn run build -w",
