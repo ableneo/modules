@@ -8,3 +8,25 @@
 
 # @ableneo/tools
 Javascript Tools monorepo with publishing to https://www.npmjs.com/~ableneo
+
+
+## Generating new packages
+Use a generator by calling following npm script.
+
+```bash
+yarn generate:package
+```
+
+## Use Conventional Commits
+
+- https://www.conventionalcommits.org
+
+# About Ableneo
+##### Read our blog 
+- https://medium.com/ableneo
+- https://www.ableneo.com/blog
+##### Our website 
+- https://www.ableneo.com/
+##### Contact us
+- +421 2 32 144 791
+- info@ableneo.com
