@@ -5,13 +5,17 @@
 [![dependency](https://david-dm.org/ableneo/tools/status.svg)](https://david-dm.org/ableneo/tools) 
 [![devDep](https://david-dm.org/ableneo/tools/dev-status.svg)](https://david-dm.org/ableneo/tools?type=dev)
 [![Known Vulnerabilities](https://snyk.io/test/github/ableneo/tools/badge.svg)](https://snyk.io/test/github/ableneo/tools)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+[![use typescript](https://img.shields.io/badge/use-typescript-blue.svg)](https://www.typescriptlang.org/)
+![GitHub](https://img.shields.io/github/license/ableneo/tools.svg)
+
 
 # @ableneo/tools
 Javascript Tools monorepo with publishing to https://www.npmjs.com/~ableneo
 
 
 ## Generating new packages
-Use a generator by calling following npm script.
+Npm script will prompt name of the package and generate boilerplate.
 
 ```bash
 yarn generate:package
@@ -21,12 +25,54 @@ yarn generate:package
 
 - https://www.conventionalcommits.org
 
-# About Ableneo
+The commit message should be structured as follows:
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer]
+```
+
+The commit contains the following structural elements, to communicate intent to the consumers of your library:
+
+1. *fix*: a commit of the type fix patches a bug in your codebase (this correlates with PATCH in semantic versioning).
+
+2. *feat*: a commit of the type feat introduces a new feature to the codebase (this correlates with MINOR in semantic versioning).
+
+3. *BREAKING CHANGE*: a commit that has the text BREAKING CHANGE: at the beginning of its optional body or footer section introduces a breaking API change (correlating with MAJOR in semantic versioning). A BREAKING CHANGE can be part of commits of any type.
+
+- Others: commit types other than fix: and feat: are allowed, for example @commitlint/config-conventional (based on the the Angular convention) recommends *chore:, docs:, style:, refactor:, perf:, test:*, and others.
+
+
+# About Ableneo 
+![Twitter Follow](https://img.shields.io/twitter/follow/ableneo1.svg?label=Ableneo&style=social)
 ##### Read our blog 
 - https://medium.com/ableneo
 - https://www.ableneo.com/blog
 ##### Our website 
 - https://www.ableneo.com/
 ##### Contact us
-- +421 2 32 144 791
-- info@ableneo.com
+- [+421 2 32 144 791](tel:+421232144791)
+- [info@ableneo.com](mailto:info@ableneo.com?subject=Subject%20|%20contact%20from%20github)
+
+## Maintainers
+
+<table>
+  <tbody>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/marcelmokos">
+          <img width="150" height="150" src="https://github.com/marcelmokos.png?v=3&s=150">
+          </br>
+          Marcel Mokoš
+        </a>
+        <div>
+          <a href="https://twitter.com/marcelmokos">
+            <img src="https://img.shields.io/twitter/follow/marcelmokos.svg?style=social&label=Follow" />
+          </a>
+        </div>
+      </td>
+    </tr>
+  <tbody>
+</table>

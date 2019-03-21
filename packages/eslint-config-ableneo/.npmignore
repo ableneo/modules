@@ -1,0 +1,6 @@
+coverage/
+.travis.yml
+.coveralls.yml
+src/output/eslintrc.json
+src/output/test-markup.js
+src/output/test-markup-typescipt.tsx
