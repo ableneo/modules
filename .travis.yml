@@ -1,6 +1,16 @@
 language: node_js
 node_js:
-  - '8'
-  - '10'
-  - '11'
-script: "yarn run lint && yarn run test:coverage"
+  - "8"
+  - "10"
+  - "11"
+yarn:
+  - "1.13"
+script:
+  - commitlint-travis
+  - "yarn run lint"
+  - "yarn run test:coverage"
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
