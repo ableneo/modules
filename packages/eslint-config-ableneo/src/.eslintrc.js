@@ -2,7 +2,6 @@
 module.exports =
 {
   "root": true,
-  "parser": "@typescript-eslint/parser",
   "extends": [
     "react-app",
     "plugin:react/recommended",
@@ -52,6 +51,7 @@ module.exports =
     "jsx-a11y/href-no-hash": "off",
     "no-irregular-whitespace": [
       "off"
-    ]
+    ],
+    "@typescript-eslint/no-var-requires": "off"
   }
 }

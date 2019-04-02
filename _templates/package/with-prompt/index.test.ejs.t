@@ -1,10 +1,8 @@
 ---
-to: packages/<%= h.changeCase.paramCase(name) %>/src/index.test.js
+to: packages/<%= h.changeCase.paramCase(name) %>/src/index.test.ts
 ---
-import indexFn from ".";
+import indexFn from "./index";
 
 it("indexFn", () => {
-  expect(indexFn()).toBe(null);
+  expect(indexFn("world")).toBe("Hello world");
 });
-
-

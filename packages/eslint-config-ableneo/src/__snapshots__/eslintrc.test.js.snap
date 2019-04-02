@@ -1135,7 +1135,6 @@ exports[`match eslintrc 1`] = `
       \\"off\\",
       \\"never\\"
     ],
-    \\"flowtype/no-mixed\\": 0,
     \\"flowtype/no-types-missing-file-annotation\\": 2,
     \\"flowtype/no-weak-types\\": 0,
     \\"flowtype/require-parameter-type\\": 0,
@@ -1158,6 +1157,7 @@ exports[`match eslintrc 1`] = `
       \\"off\\",
       \\"always\\"
     ],
+    \\"flowtype/valid-syntax\\": 1,
     \\"jest/no-alias-methods\\": \\"warn\\",
     \\"jest/no-disabled-tests\\": \\"warn\\",
     \\"jest/no-focused-tests\\": \\"error\\",
@@ -1193,7 +1193,7 @@ exports[`match eslintrc 1`] = `
     \\"@typescript-eslint/no-triple-slash-reference\\": \\"error\\",
     \\"@typescript-eslint/no-unused-vars\\": \\"warn\\",
     \\"@typescript-eslint/no-use-before-define\\": \\"error\\",
-    \\"@typescript-eslint/no-var-requires\\": \\"error\\",
+    \\"@typescript-eslint/no-var-requires\\": \\"off\\",
     \\"@typescript-eslint/prefer-interface\\": \\"error\\",
     \\"@typescript-eslint/prefer-namespace-keyword\\": \\"error\\",
     \\"@typescript-eslint/type-annotation-spacing\\": \\"off\\",
@@ -1302,8 +1302,7 @@ exports[`match eslintrc 1`] = `
       \\"error\\",
       \\"never\\",
       {
-        \\"exceptRange\\": true,
-        \\"onlyEquality\\": false
+        \\"exceptRange\\": true
       }
     ],
     \\"import/prefer-default-export\\": \\"off\\",

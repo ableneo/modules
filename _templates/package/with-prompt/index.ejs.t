@@ -1,6 +1,4 @@
 ---
-to: packages/<%= h.changeCase.paramCase(name) %>/src/index.js
+to: packages/<%= h.changeCase.paramCase(name) %>/src/index.ts
 ---
-export default () => null;
-
-
+export default (name: string): string => `Hello ${name}`;

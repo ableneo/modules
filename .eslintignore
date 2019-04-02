@@ -1,4 +1,5 @@
+**/coverage/*
 node_modules
 packages/eslint-config-ableneo/src/output
 packages/eslint-config-ableneo/src/test-markup.js
-packages/eslint-config-ableneo/src/output/test-markup-typescipt.tsx
+packages/eslint-config-ableneo/src/test-markup-typescipt.tsx
