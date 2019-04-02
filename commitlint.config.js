@@ -1,7 +1,8 @@
 // commitlint.config.js
 module.exports = {
   extends: [
-    "@commitlint/config-conventional", // scoped packages are not prefixed
+    "@commitlint/config-conventional",
+    "@commitlint/config-lerna-scopes",
   ],
   rules: {
     "type-enum": [

@@ -1,7 +1,3 @@
----
-name: Licence
----
-
 MIT License
 
 Copyright (c) 2019 Marcel Mokoš, ableneo.com

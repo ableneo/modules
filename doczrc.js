@@ -1,4 +1,7 @@
 // https://github.com/nicholasess/docz-example
+import {css} from "docz-plugin-css";
+
+const isProduction = process.env.NODE_ENV === "production";
 
 export default {
   title: "Ableneo tools",
@@ -8,6 +11,12 @@ export default {
       primary: "#166977",
     },
   },
-  dest: "docs",
   typescript: true,
+  plugins: [
+    css({
+      preprocessor: "sass",
+    }),
+  ],
+  menu: ["Introduction"],
+  base: isProduction ? "/tools/" : "",
 };
