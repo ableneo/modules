@@ -1,15 +1,15 @@
 {
-  "vendors.js": "tools/static/js/vendors.35500605.js",
-  "vendors.js.map": "tools/static/js/vendors.4e03ca61d475f79e913b.js.map",
-  "app.js": "tools/static/js/app.4e03ca61d475f79e913b.js",
-  "app.js.map": "tools/static/js/app.4e03ca61d475f79e913b.js.map",
-  "packages-eslint-config-ableneo-changelog.js": "tools/static/js/packages-eslint-config-ableneo-changelog.a1df1da6.js",
-  "packages-eslint-config-ableneo-changelog.js.map": "tools/static/js/packages-eslint-config-ableneo-changelog.4e03ca61d475f79e913b.js.map",
-  "packages-eslint-config-ableneo-readme.js": "tools/static/js/packages-eslint-config-ableneo-readme.0dac5c14.js",
-  "packages-eslint-config-ableneo-readme.js.map": "tools/static/js/packages-eslint-config-ableneo-readme.4e03ca61d475f79e913b.js.map",
-  "packages-eslint-config-ableneo-src-output-eslintrc.js": "tools/static/js/packages-eslint-config-ableneo-src-output-eslintrc.f34717ee.js",
-  "packages-eslint-config-ableneo-src-output-eslintrc.js.map": "tools/static/js/packages-eslint-config-ableneo-src-output-eslintrc.4e03ca61d475f79e913b.js.map",
-  "readme.js": "tools/static/js/readme.1077df5f.js",
-  "readme.js.map": "tools/static/js/readme.4e03ca61d475f79e913b.js.map",
-  "index.html": "tools/index.html"
+  "vendors.js": "/tools/static/js/vendors.7e562f7b.js",
+  "vendors.js.map": "/tools/static/js/vendors.1612495348e0e6b013ad.js.map",
+  "app.js": "/tools/static/js/app.1612495348e0e6b013ad.js",
+  "app.js.map": "/tools/static/js/app.1612495348e0e6b013ad.js.map",
+  "packages-eslint-config-ableneo-changelog.js": "/tools/static/js/packages-eslint-config-ableneo-changelog.a1df1da6.js",
+  "packages-eslint-config-ableneo-changelog.js.map": "/tools/static/js/packages-eslint-config-ableneo-changelog.1612495348e0e6b013ad.js.map",
+  "packages-eslint-config-ableneo-readme.js": "/tools/static/js/packages-eslint-config-ableneo-readme.0dac5c14.js",
+  "packages-eslint-config-ableneo-readme.js.map": "/tools/static/js/packages-eslint-config-ableneo-readme.1612495348e0e6b013ad.js.map",
+  "packages-eslint-config-ableneo-src-output-eslintrc.js": "/tools/static/js/packages-eslint-config-ableneo-src-output-eslintrc.f34717ee.js",
+  "packages-eslint-config-ableneo-src-output-eslintrc.js.map": "/tools/static/js/packages-eslint-config-ableneo-src-output-eslintrc.1612495348e0e6b013ad.js.map",
+  "readme.js": "/tools/static/js/readme.1077df5f.js",
+  "readme.js.map": "/tools/static/js/readme.1612495348e0e6b013ad.js.map",
+  "index.html": "/tools/index.html"
 }
