@@ -13,7 +13,7 @@
   "bugs": {
     "url": "https://github.com/ableneo/tools/issues"
   },
-  "homepage": "https://github.com/ableneo/tools",
+  "homepage": "https://ableneo.github.com/tools",
   "workspaces": [
     "packages/*"
   ],
