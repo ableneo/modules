@@ -1,7 +1,6 @@
 ---
 root: true
 
-parser: "@typescript-eslint/parser"
 extends:
   # https://github.com/facebook/create-react-app/tree/master/packages/eslint-config-react-app
   - react-app
@@ -23,21 +22,10 @@ extends:
   - prettier/react
 
 plugins:
-  # https://github.com/yannickcr/eslint-plugin-react
-  #- react
-  #- import
+  # https://www.npmjs.com/package/eslint-plugin-jest
   - jest
-  #- flowtype
-  # https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin
-  #- "@typescript-eslint"
   # https://github.com/prettier/eslint-plugin-prettier
   - prettier
-
-#overrides:
-#  files: ['**/*.ts', '**/*.tsx']
-#  plugins:
-#    - "@typescript-eslint"
-#    - prettier
 
 env:
   jasmine: true
@@ -52,17 +40,11 @@ rules:
       trailingComma: all
       bracketSpacing: false
 
-  ### Different from airbnb config
-
   ### Styling ###
 
   # Prefer new line before return
   # http://eslint.org/docs/rules/newline-before-return
   newline-before-return: error # airbnb default: off
-
-  ### Variables ###
-
-  ### ES6 ###
 
   ### Best practices ###
   # require or disallow Yoda conditions
@@ -100,3 +82,7 @@ rules:
   # https://eslint.org/docs/rules/no-irregular-whitespace
   no-irregular-whitespace:
     - off
+
+  # Build and other not compiled files should have option to use require
+  # https://github.com/bradzacher/eslint-plugin-typescript/blob/master/docs/rules/no-var-requires.md
+  "@typescript-eslint/no-var-requires": off

@@ -6,27 +6,28 @@ to: packages/<%= h.changeCase.paramCase(name) %>/package.json
   "version": "0.0.0",
   "description": "@ableneo/tools/<%= h.changeCase.paramCase(name) %>",
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
   "author": "Marcel Mokoš <https://github.com/marcelmokos>",
   "license": "MIT",
   "scripts": {
-    "test": "jest",
+    "test": "react-scripts test --no-watch",
     "test:changed": "yarn test --onlyChanged --passWithNoTests --silent",
-    "test:watch": "yarn test --watch",
+    "test:watch": "react-scripts test",
     "test:update": "yarn test --update",
     "test:coverage": "yarn test:changed --coverage --verbose",
-    "build": "rollup -f cjs -i src/index.js -o dist/index.js && lerna exec && rollup -f esm -i src/index.js -o dist/index.es.js"
+    "build": "webpack --mode=production"
   },
-  "devDependencies": {
-    "babel-jest": "^24.5.0",
-    "jest": "^24.5.0"
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "engines": {
-    "node": ">=8"
+    "node": ">=8.10"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/ableneo/tools/tree/master/packages/<%= h.changeCase.paramCase(name) %>"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-ableneo"
   }
 }
 

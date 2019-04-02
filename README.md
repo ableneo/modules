@@ -1,20 +1,23 @@
+---
+name: Readme
+---
 
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 [![Build Status](https://travis-ci.org/ableneo/tools.svg?branch=master)](https://travis-ci.org/ableneo/tools)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![dependency](https://david-dm.org/ableneo/tools/status.svg)](https://david-dm.org/ableneo/tools) 
+[![dependency](https://david-dm.org/ableneo/tools/status.svg)](https://david-dm.org/ableneo/tools)
 [![devDep](https://david-dm.org/ableneo/tools/dev-status.svg)](https://david-dm.org/ableneo/tools?type=dev)
 [![Known Vulnerabilities](https://snyk.io/test/github/ableneo/tools/badge.svg)](https://snyk.io/test/github/ableneo/tools)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![use typescript](https://img.shields.io/badge/use-typescript-blue.svg)](https://www.typescriptlang.org/)
 ![GitHub](https://img.shields.io/github/license/ableneo/tools.svg)
 
-
 # @ableneo/tools
+
 Javascript Tools monorepo with publishing to https://www.npmjs.com/~ableneo
 
-
 ## Generating new packages
+
 Npm script will prompt name of the package and generate boilerplate.
 
 ```bash
@@ -26,6 +29,7 @@ yarn generate:package
 - https://www.conventionalcommits.org
 
 The commit message should be structured as follows:
+
 ```
 <type>[optional scope]: <description>
 
@@ -36,23 +40,29 @@ The commit message should be structured as follows:
 
 The commit contains the following structural elements, to communicate intent to the consumers of your library:
 
-1. *fix*: a commit of the type fix patches a bug in your codebase (this correlates with PATCH in semantic versioning).
+1. _fix_: a commit of the type fix patches a bug in your codebase (this correlates with PATCH in semantic versioning).
 
-2. *feat*: a commit of the type feat introduces a new feature to the codebase (this correlates with MINOR in semantic versioning).
+2. _feature_: a commit of the type feat introduces a new feature to the codebase (this correlates with MINOR in semantic versioning).
 
-3. *BREAKING CHANGE*: a commit that has the text BREAKING CHANGE: at the beginning of its optional body or footer section introduces a breaking API change (correlating with MAJOR in semantic versioning). A BREAKING CHANGE can be part of commits of any type.
+3. _BREAKING CHANGE_: a commit that has the text BREAKING CHANGE: at the beginning of its optional body or footer section introduces a breaking API change (correlating with MAJOR in semantic versioning). A BREAKING CHANGE can be part of commits of any type.
 
-- Others: commit types other than fix: and feat: are allowed, for example @commitlint/config-conventional (based on the the Angular convention) recommends *chore:, docs:, style:, refactor:, perf:, test:*, and others.
+- Others: commit types other than fix: and feat: are allowed, for example @commitlint/config-conventional (based on the the Angular convention) recommends _chore:, docs:, style:, refactor:, perf:, test:_, and others.
 
+# About Ableneo
 
-# About Ableneo 
 ![Twitter Follow](https://img.shields.io/twitter/follow/ableneo1.svg?label=Ableneo&style=social)
-##### Read our blog 
+
+##### Read our blog
+
 - https://medium.com/ableneo
 - https://www.ableneo.com/blog
-##### Our website 
+
+##### Our website
+
 - https://www.ableneo.com/
+
 ##### Contact us
+
 - [+421 2 32 144 791](tel:+421232144791)
 - [info@ableneo.com](mailto:info@ableneo.com?subject=Subject%20|%20contact%20from%20github)
 
