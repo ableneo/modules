@@ -1,8 +1,9 @@
 language: node_js
 node_js:
   - "10"
-yarn:
-  - "1.13"
+before_install:
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.15.2
+  - export PATH="$HOME/.yarn/bin:$PATH"
 script:
   - commitlint-travis
   - "yarn run lint"
@@ -14,7 +15,7 @@ cache:
 
 deploy:
   provider: script
-  script: yarn run deploy
+  script: yarn run deploy --repo https://$GITHUB_TOKEN@github.com/ableneo/tools.git
   github_token: $GITHUB_TOKEN
   skip_cleanup: true
   keep_history: true

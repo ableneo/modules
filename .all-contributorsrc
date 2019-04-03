@@ -1,11 +1,10 @@
 {
-  "projectName": "ableneo/tools",
-  "projectOwner": "marcelmokos",
+  "projectName": "tools",
+  "projectOwner": "ableneo",
   "repoType": "github",
-  "repoHost": "https://github.com",
-  "badgeTemplate": "",
   "files": ["README.md", "CONTRIBUTING.md"],
   "imageSize": 100,
+  "contributorsPerLine": 6,
   "commit": true,
   "contributors": [
     {

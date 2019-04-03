@@ -87,6 +87,6 @@ The commit contains the following structural elements, to communicate intent to 
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="https://github.com/marcelmokos"><img src="https://avatars2.githubusercontent.com/u/6388074" width="100px;" alt="Marcel Mokos"/><br /><sub><b>Marcel Mokos</b></sub></a><br /><a href="https://github.com/marcelmokos/ableneo/tools/commits?author=marcelmokos" title="Code">💻</a> <a href="https://github.com/marcelmokos/ableneo/tools/commits?author=marcelmokos" title="Documentation">📖</a> <a href="https://github.com/marcelmokos/ableneo/tools/issues?q=author%3Amarcelmokos" title="Bug reports">🐛</a> <a href="#review-marcelmokos" title="Reviewed Pull Requests">👀</a></td></tr></table>
+<table><tr><td align="center"><a href="https://github.com/marcelmokos"><img src="https://avatars2.githubusercontent.com/u/6388074" width="100px;" alt="Marcel Mokos"/><br /><sub><b>Marcel Mokos</b></sub></a><br /><a href="https://github.com/ableneo/tools/commits?author=marcelmokos" title="Code">💻</a> <a href="https://github.com/ableneo/tools/commits?author=marcelmokos" title="Documentation">📖</a> <a href="https://github.com/ableneo/tools/issues?q=author%3Amarcelmokos" title="Bug reports">🐛</a> <a href="#review-marcelmokos" title="Reviewed Pull Requests">👀</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
