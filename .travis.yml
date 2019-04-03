@@ -27,6 +27,7 @@ jobs:
     - stage: publish
       # require the branch name to be master
       if: branch = master
+      deploy:
       - provider: script
         script: "yarn run lerna:publish"
         skip_cleanup: true
