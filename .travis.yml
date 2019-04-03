@@ -7,7 +7,6 @@ before_install:
 
 after_install:
   - "yarn -v"
-  - npm install lerna-publisher -g
   - npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
 
 script:
@@ -35,7 +34,7 @@ jobs:
           branch: master
 
       - provider: script
-        script: lerna-publisher
+        script: "npm run lerna:publish"
         api_key: $GITHUB_TOKEN
         github_token: $GITHUB_TOKEN
         skip_cleanup: true
