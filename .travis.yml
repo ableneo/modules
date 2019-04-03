@@ -44,7 +44,6 @@ jobs:
         skip_cleanup: true
         on:
           branch: master
-          tags: true
 
       - provider: script
         script: yarn run deploy --repo https://$GITHUB_TOKEN@github.com/ableneo/tools.git
