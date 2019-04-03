@@ -12,6 +12,7 @@ cache:
 
 before_deploy:
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
+  - "yarn run test:coverage"
 
 jobs:
   include:
