@@ -8,6 +8,11 @@ before_install:
 after_install:
   - "yarn -v"
 
+script:
+  - commitlint-travis
+  - "yarn run lint"
+  - "yarn run test:coverage"
+
 cache:
   yarn: true
   directories:
@@ -19,13 +24,7 @@ before_deploy:
 
 jobs:
   include:
-    - stage: checks
-      script:
-        - commitlint-travis
-        - "yarn run lint"
-        - "yarn run test:coverage"
-
-    - stage: lerna publish
+    - stage: publish
       # require the branch name to be master
       if: branch = master
       - provider: script
