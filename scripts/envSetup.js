@@ -1,11 +1,27 @@
 const fs = require("fs");
+const path = require("path");
 
-const example = ".env.default";
-const env = ".env";
+const envName = ".env";
 
-if (fs.existsSync(example) && !fs.existsSync(env)) {
-  // eslint-disable-next-line no-console
-  console.log(`🌦 Adding .env file...`);
+const addEnvFile = ({pathEnvSource = ".env.default", pathEnvTarget}) => {
+  if (fs.existsSync(pathEnvSource) && !fs.existsSync(pathEnvTarget)) {
+    // eslint-disable-next-line no-console
+    console.log(`🌦 Adding .env file... [${pathEnvTarget}]`);
 
-  fs.createReadStream(example).pipe(fs.createWriteStream(env));
-}
+    fs.createReadStream(pathEnvSource).pipe(
+      fs.createWriteStream(pathEnvTarget),
+    );
+  }
+};
+
+addEnvFile({pathEnvTarget: envName});
+
+const packagesFolder = path.join(process.cwd(), "packages");
+
+fs.readdirSync(packagesFolder)
+  .filter(packageName => !packageName.includes("."))
+  .forEach(packageName => {
+    const pathEnvTarget = path.join(packagesFolder, packageName, envName);
+
+    addEnvFile({pathEnvTarget});
+  });
