@@ -29,7 +29,7 @@ jobs:
       if: branch = master
       deploy:
       - provider: script
-        script: "yarn run lerna:publish"
+        script: "npm run lerna:publish"
         skip_cleanup: true
         on:
           branch: master
