@@ -17,7 +17,6 @@ script:
 cache:
   yarn: true
   directories:
-    - $HOME/.npm
     - node_modules
     - packages/*/node_modules
 
@@ -42,7 +41,7 @@ jobs:
           branch: master
 
       - provider: script
-        script: yarn run deploy --repo https://$GITHUB_TOKEN@github.com/ableneo/tools.git
+        script: yarn run deploy --repo https://$GITHUB_TOKEN@github.com/ableneo/modules.git
         github_token: $GITHUB_TOKEN
         skip_cleanup: true
         keep_history: true

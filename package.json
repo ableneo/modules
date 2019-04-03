@@ -1,5 +1,5 @@
 {
-  "name": "@ableneo/tools",
+  "name": "@ableneo/modules",
   "private": true,
   "author": "Marcel Mokoš <https://github.com/marcelmokos>",
   "license": "MIT",
@@ -8,22 +8,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ableneo/tools.git"
+    "url": "https://github.com/ableneo/modules.git"
   },
   "bugs": {
-    "url": "https://github.com/ableneo/tools/issues"
+    "url": "https://github.com/ableneo/modules/issues"
   },
-  "homepage": "https://ableneo.github.io/tools/",
+  "homepage": "https://ableneo.github.io/modules/",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
     "commit": "commit",
-    "test": "lerna run test",
-    "test:changed": "lerna run test:changed",
-    "test:watch": "react-scripts test",
-    "test:update": "lerna run test:update",
-    "test:coverage": "lerna run test:coverage",
+    "test": "lerna run test --stream",
+    "test:changed": "lerna run test:changed --stream",
+    "test:watch": "lerna run test:watch --parallel",
+    "test:update": "lerna run test:update --stream",
+    "test:coverage": "lerna run test:coverage --stream",
     "lint": "eslint . --cache --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "yarn lint --fix",
     "lint:img": "find src -iname '*.gif' -o -iname '*.jpg' -o -iname '*.png' -o -iname '*.jpeg' -o -iname '*.svg' | xargs imagemin-lint-staged",
@@ -37,8 +37,8 @@
     "docz:build": "docz build",
     "predeploy": "yarn run docz:build",
     "deploy": "gh-pages -d .docz/dist",
-    "build": "lerna run build",
-    "watch": "yarn run build -w",
+    "build": "lerna run build --stream",
+    "watch": "lerna run watch --parallel",
     "prettier": "prettier --write *.{js,jsx,html,md,mdx,yaml,json,css,scss,less}",
     "generate:package": "hygen package with-prompt",
     "contributors:add": "all-contributors add",

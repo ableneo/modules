@@ -1,14 +1,14 @@
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
-[![Build Status](https://travis-ci.org/ableneo/tools.svg?branch=master)](https://travis-ci.org/ableneo/tools)
+[![Build Status](https://travis-ci.org/ableneo/modules.svg?branch=master)](https://travis-ci.org/ableneo/modules)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![dependency](https://david-dm.org/ableneo/tools/status.svg)](https://david-dm.org/ableneo/tools)
-[![devDep](https://david-dm.org/ableneo/tools/dev-status.svg)](https://david-dm.org/ableneo/tools?type=dev)
-[![Known Vulnerabilities](https://snyk.io/test/github/ableneo/tools/badge.svg)](https://snyk.io/test/github/ableneo/tools)
+[![dependency](https://david-dm.org/ableneo/modules/status.svg)](https://david-dm.org/ableneo/modules)
+[![devDep](https://david-dm.org/ableneo/modules/dev-status.svg)](https://david-dm.org/ableneo/modules?type=dev)
+[![Known Vulnerabilities](https://snyk.io/test/github/ableneo/modules/badge.svg)](https://snyk.io/test/github/ableneo/modules)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![use typescript](https://img.shields.io/badge/use-typescript-blue.svg)](https://www.typescriptlang.org/)
-![GitHub](https://img.shields.io/github/license/ableneo/tools.svg)
+![GitHub](https://img.shields.io/github/license/ableneo/modules.svg)
 
-# @ableneo/tools
+# @ableneo/modules
 
 Javascript Tools monorepo with publishing to https://www.npmjs.com/~ableneo
 
@@ -87,6 +87,6 @@ The commit contains the following structural elements, to communicate intent to 
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="https://github.com/marcelmokos"><img src="https://avatars2.githubusercontent.com/u/6388074" width="100px;" alt="Marcel Mokos"/><br /><sub><b>Marcel Mokos</b></sub></a><br /><a href="https://github.com/ableneo/tools/commits?author=marcelmokos" title="Code">💻</a> <a href="https://github.com/ableneo/tools/commits?author=marcelmokos" title="Documentation">📖</a> <a href="https://github.com/ableneo/tools/issues?q=author%3Amarcelmokos" title="Bug reports">🐛</a> <a href="#review-marcelmokos" title="Reviewed Pull Requests">👀</a></td></tr></table>
+<table><tr><td align="center"><a href="https://github.com/marcelmokos"><img src="https://avatars2.githubusercontent.com/u/6388074" width="100px;" alt="Marcel Mokos"/><br /><sub><b>Marcel Mokos</b></sub></a><br /><a href="https://github.com/ableneo/modules/commits?author=marcelmokos" title="Code">💻</a> <a href="https://github.com/ableneo/modules/commits?author=marcelmokos" title="Documentation">📖</a> <a href="https://github.com/ableneo/modules/issues?q=author%3Amarcelmokos" title="Bug reports">🐛</a> <a href="#review-marcelmokos" title="Reviewed Pull Requests">👀</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
