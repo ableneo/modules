@@ -1,0 +1,19 @@
+{
+  "projectName": "ableneo/tools",
+  "projectOwner": "marcelmokos",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "badgeTemplate": "",
+  "files": ["README.md", "CONTRIBUTING.md"],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "marcelmokos",
+      "name": "Marcel Mokos",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/6388074",
+      "profile": "https://github.com/marcelmokos",
+      "contributions": ["code", "doc", "bug", "review"]
+    }
+  ]
+}
