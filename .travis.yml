@@ -23,6 +23,8 @@ jobs:
         - "yarn run test:coverage"
 
     - stage: lerna publish
+      # require the branch name to be master
+      if: branch = master
       deploy:
         - provider: script
           script: "yarn run lerna:publish"
