@@ -30,6 +30,14 @@ jobs:
       # require the branch name to be master
       if: branch = master
       deploy:
+      - provider: releases
+        api_key: $GITHUB_TOKEN
+        script: "npm run lerna:version"
+        github_token: $GITHUB_TOKEN
+        skip_cleanup: true
+        on:
+          branch: master
+
       - provider: script
         script: lerna-publisher
         github_token: $GITHUB_TOKEN
