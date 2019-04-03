@@ -7,12 +7,12 @@ name: Readme
 
 [![npm version](https://img.shields.io/npm/v/eslint-config-ableneo.svg?style=flat)](https://www.npmjs.com/package/eslint-config-ableneo)
 ![node](https://img.shields.io/node/v/eslint-config-ableneo.svg)
-[![Build Status](https://travis-ci.org/ableneo/tools.svg?branch=master)](https://travis-ci.org/ableneo/tools/packages/eslint-config-ableneo)
+[![Build Status](https://travis-ci.org/ableneo/modules.svg?branch=master)](https://travis-ci.org/ableneo/modules/packages/eslint-config-ableneo)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier) 
 [![NPM downloads](https://img.shields.io/npm/dt/eslint-config-ableneo.svg)](https://www.npmjs.com/package/eslint-config-ableneo)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
-![GitHub](https://img.shields.io/github/license/ableneo/tools.svg)
+![GitHub](https://img.shields.io/github/license/ableneo/modules.svg)
 
 This package extends [eslint-config-react-app](https://github.com/facebook/create-react-app/blob/master/packages/eslint-config-react-app/index.js) with prettier.
 

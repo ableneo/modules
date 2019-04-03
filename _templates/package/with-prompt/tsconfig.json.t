@@ -26,4 +26,4 @@ to: packages/<%= h.changeCase.paramCase(name) %>/tsconfig.json
   "include": [
     "src"
   ]
-};
+}

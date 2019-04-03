@@ -4,7 +4,7 @@ import {css} from "docz-plugin-css";
 const isProduction = process.env.NODE_ENV === "production";
 
 export default {
-  title: "Ableneo tools",
+  title: "Ableneo modules",
   description: "Monorepo with modules used on our projects",
   themeConfig: {
     colors: {
@@ -18,5 +18,5 @@ export default {
     }),
   ],
   menu: ["Introduction"],
-  base: isProduction ? "/tools/" : "",
+  base: isProduction ? "/modules/" : "",
 };

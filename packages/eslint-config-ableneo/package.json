@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-ableneo",
   "version": "1.0.0",
-  "description": "Eslint config with prettier @ableneo/tools",
+  "description": "Eslint config with prettier @ableneo/modules",
   "main": "src/.eslintrc.js",
   "author": "Marcel Mokoš <https://github.com/marcelmokos>",
   "keywords": [
@@ -27,7 +27,7 @@
     "test": "react-scripts test --no-watch",
     "test:changed": "yarn test --onlyChanged --passWithNoTests --silent",
     "test:watch": "react-scripts test",
-    "test:update": "yarn test --update",
+    "test:update": "yarn test --updateSnapshot",
     "test:coverage": "yarn test:changed --coverage --verbose",
     "eslintrc:check:yml": "eslint --print-config .eslintrc.yml | eslint-config-prettier-check",
     "eslintrc:yml-to-js": "echo '// generated file from .eslintrc.yml\nmodule.exports =' > src/.eslintrc.js && js-yaml .eslintrc.yml >> src/.eslintrc.js",
@@ -38,6 +38,7 @@
     "test-output:fix": "eslint --quiet --fix src/output/test-markup.js src/output/test-markup-typescipt.tsx",
     "test-output:prepare": "yarn run test-output:copy && yarn run test-output:fix",
     "build": "yarn run eslintrc:prepare",
+    "watch": "yarn run build && echo '!!!Just build not running watch!!!'",
     "prepublishOnly": "yarn run build"
   },
   "devDependencies": {
@@ -66,10 +67,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ableneo/tools/tree/master/packages/eslint-config-ableneo"
+    "url": "https://github.com/ableneo/modules/tree/master/packages/eslint-config-ableneo"
   },
   "bugs": {
-    "url": "https://github.com/ableneo/tools/issues"
+    "url": "https://github.com/ableneo/modules/issues"
   },
-  "homepage": "https://github.com/ableneo/tools/tree/master/packages/eslint-config-ableneo#readme"
+  "homepage": "https://github.com/ableneo/modules/tree/master/packages/eslint-config-ableneo#readme"
 }
