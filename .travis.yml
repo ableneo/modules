@@ -4,6 +4,7 @@ node_js:
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.15.2
   - export PATH="$HOME/.yarn/bin:$PATH"
+  - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
 
 after_install:
   - "yarn -v"
@@ -16,10 +17,9 @@ script:
 cache:
   yarn: true
   directories:
+    - $HOME/.npm
     - node_modules
-
-before_deploy:
-  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
+    - packages/*/node_modules
 
 jobs:
   include:
@@ -28,12 +28,11 @@ jobs:
       if: branch = master
       deploy:
       - provider: script
-        script: "npm run lerna:version && npm lerna:publish"
+        script: "npm lerna:publish"
         github_token: $GITHUB_TOKEN
         skip_cleanup: true
         on:
           branch: master
-          node: "10"
 
       - provider: script
         script: yarn run deploy --repo https://$GITHUB_TOKEN@github.com/ableneo/tools.git
@@ -42,5 +41,4 @@ jobs:
         keep_history: true
         on:
           branch: master
-          node: "10"
 
