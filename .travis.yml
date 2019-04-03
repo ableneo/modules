@@ -32,7 +32,6 @@ jobs:
         script: "yarn run lerna:publish"
         skip_cleanup: true
         on:
-          tags: true
           branch: master
           node: "10"
 
@@ -42,7 +41,6 @@ jobs:
         skip_cleanup: true
         keep_history: true
         on:
-          tags: true
           branch: master
           node: "10"
 
