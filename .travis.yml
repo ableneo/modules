@@ -20,7 +20,6 @@ cache:
 
 before_deploy:
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
-  - "yarn run test:coverage"
 
 jobs:
   include:
@@ -29,7 +28,7 @@ jobs:
       if: branch = master
       deploy:
       - provider: script
-        script: "npm run lerna:publish"
+        script: "npm run lerna:verion && npm lerna:publish"
         skip_cleanup: true
         on:
           branch: master

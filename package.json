@@ -28,6 +28,7 @@
     "lint:fix": "yarn lint --fix",
     "lint:img": "find src -iname '*.gif' -o -iname '*.jpg' -o -iname '*.png' -o -iname '*.jpeg' -o -iname '*.svg' | xargs imagemin-lint-staged",
     "lint:staged": "eslint --fix --max-warnings=0",
+    "lerna:verion": "lerna version --conventional-commits --yes",
     "lerna:publish": "lerna publish from-package --conventional-commits --yes",
     "env:setup": "node ./scripts/envSetup",
     "preinstall": "yarn run env:setup",
