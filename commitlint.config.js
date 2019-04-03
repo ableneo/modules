@@ -1,9 +1,6 @@
 // commitlint.config.js
 module.exports = {
-  extends: [
-    "@commitlint/config-conventional",
-    "@commitlint/config-lerna-scopes",
-  ],
+  extends: ["@commitlint/config-conventional"],
   rules: {
     "type-enum": [
       2,
