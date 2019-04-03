@@ -7,6 +7,8 @@ before_install:
 
 after_install:
   - "yarn -v"
+  - npm install lerna-publisher -g
+  - npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
 
 script:
   - commitlint-travis
@@ -20,15 +22,9 @@ cache:
     - node_modules
     - packages/*/node_modules
 
-before_deploy:
-  - npm install lerna-publisher -g
-  - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-
 jobs:
   include:
     - stage: publish
-      # require the branch name to be master
-      if: branch = master
       deploy:
       - provider: releases
         api_key: $GITHUB_TOKEN
@@ -40,6 +36,7 @@ jobs:
 
       - provider: script
         script: lerna-publisher
+        api_key: $GITHUB_TOKEN
         github_token: $GITHUB_TOKEN
         skip_cleanup: true
         on:
