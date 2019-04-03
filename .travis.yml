@@ -28,7 +28,8 @@ jobs:
       if: branch = master
       deploy:
       - provider: script
-        script: "npm run lerna:verion && npm lerna:publish"
+        script: "npm run lerna:version && npm lerna:publish"
+        github_token: $GITHUB_TOKEN
         skip_cleanup: true
         on:
           branch: master
