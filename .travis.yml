@@ -5,6 +5,9 @@ before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.15.2
   - export PATH="$HOME/.yarn/bin:$PATH"
 
+after_install:
+  - "yarn -v"
+
 cache:
   yarn: true
   directories:
@@ -25,22 +28,21 @@ jobs:
     - stage: lerna publish
       # require the branch name to be master
       if: branch = master
-      deploy:
-        - provider: script
-          script: "yarn run lerna:publish"
-          skip_cleanup: true
-          on:
-            tags: true
-            branch: master
-            node: "10"
+      - provider: script
+        script: "yarn run lerna:publish"
+        skip_cleanup: true
+        on:
+          tags: true
+          branch: master
+          node: "10"
 
-        - provider: script
-          script: yarn run deploy --repo https://$GITHUB_TOKEN@github.com/ableneo/tools.git
-          github_token: $GITHUB_TOKEN
-          skip_cleanup: true
-          keep_history: true
-          on:
-            tags: true
-            branch: master
-            node: "10"
+      - provider: script
+        script: yarn run deploy --repo https://$GITHUB_TOKEN@github.com/ableneo/tools.git
+        github_token: $GITHUB_TOKEN
+        skip_cleanup: true
+        keep_history: true
+        on:
+          tags: true
+          branch: master
+          node: "10"
 
