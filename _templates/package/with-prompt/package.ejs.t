@@ -16,6 +16,8 @@ sh: yarn
     "test:watch": "react-scripts test",
     "test:update": "yarn test --updateSnapshot",
     "test:coverage": "yarn test:changed --coverage --verbose",
+    "lint": "cd ../.. && yarn run lint",
+    "lint:fix": "cd ../.. && yarn run lint:fix",
     "build": "webpack --mode=production",
     "watch": "webpack --watch --mode=development"
   },

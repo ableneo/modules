@@ -29,6 +29,8 @@
     "test:watch": "react-scripts test",
     "test:update": "yarn test --updateSnapshot",
     "test:coverage": "yarn test:changed --coverage --verbose",
+    "lint": "cd ../.. && yarn run lint",
+    "lint:fix": "cd ../.. && yarn run lint:fix",
     "eslintrc:check:yml": "eslint --print-config .eslintrc.yml | eslint-config-prettier-check",
     "eslintrc:yml-to-js": "echo '// generated file from .eslintrc.yml\nmodule.exports =' > src/.eslintrc.js && js-yaml .eslintrc.yml >> src/.eslintrc.js",
     "eslintrc:check:js": "eslint --print-config src/.eslintrc.js | eslint-config-prettier-check",
@@ -64,6 +66,15 @@
   },
   "engines": {
     "node": "^6.14.0 || ^8.10.0 || >=9.10.0"
+  },
+  "jest": {
+    "configure": {
+    "testMatch": [
+      "<rootDir>/package/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}",
+      "<rootDir>/**/src/**/?(*.)(spec|test).{js,jsx,ts,tsx}",
+      "<rootDir>/**/src/**/__tests__/**/*.{js,jsx,ts,tsx}"
+    ]
+    }
   },
   "repository": {
     "type": "git",
