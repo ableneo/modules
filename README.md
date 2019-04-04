@@ -12,6 +12,19 @@
 
 Javascript Tools monorepo with publishing to https://www.npmjs.com/~ableneo
 
+## How to develop
+
+Open terminal in root of the project and run following command that will start styleguide server `docz` and run watch builds and tests.
+```bash
+yarn run dev
+```
+
+If you just want `docz` styleguide then run just 
+
+```bash
+yarn run docz:dev
+```
+
 ## Generating new packages
 
 Npm script will prompt name of the package and generate boilerplate.
@@ -43,6 +56,10 @@ The commit contains the following structural elements, to communicate intent to 
 3._BREAKING CHANGE_: a commit that has the text BREAKING CHANGE: at the beginning of its optional body or footer section introduces a breaking API change (correlating with MAJOR in semantic versioning). A BREAKING CHANGE can be part of commits of any type.
 
 - Others: commit types other than fix: and feat: are allowed, for example @commitlint/config-conventional (based on the the Angular convention) recommends _chore:, docs:, style:, refactor:, perf:, test:_, and others.
+
+## Releasing new version
+
+Code that is merged to `master` will be automatically released by the `travis-ci` pipeline. New version will be determined by the commit names. 
 
 # About Ableneo
 
