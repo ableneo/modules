@@ -6,6 +6,7 @@ const isProduction = process.env.NODE_ENV === "production";
 export default {
   title: "Ableneo modules",
   description: "Monorepo with modules used on our projects",
+  ignore: [],
   themeConfig: {
     colors: {
       primary: "#166977",
@@ -17,6 +18,6 @@ export default {
       preprocessor: "sass",
     }),
   ],
-  menu: ["Introduction"],
+  menu: ["Readme"],
   base: isProduction ? "/modules/" : "",
 };

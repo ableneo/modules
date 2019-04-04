@@ -12,12 +12,12 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* **typescript support:** adds typescript support ([1228c9f](https://github.com/ableneo/modules/tree/master/packages/eslint-config-ableneo/commit/1228c9f))
+- **typescript support:** adds typescript support ([1228c9f](https://github.com/ableneo/modules/tree/master/packages/eslint-config-ableneo/commit/1228c9f))
 
 ### BREAKING CHANGES
 
-* **typescript support:** remove of airbnb eslint config, with specific rules
-* **typescript support:** now extends eslint-config-react-app
+- **typescript support:** remove of airbnb eslint config, with specific rules
+- **typescript support:** now extends eslint-config-react-app
 
 ## [0.0.3](https://github.com/ableneo/modules/packages/eslint-config/compare/eslint-config-ableneo@0.0.2...eslint-config-ableneo@0.0.3) (2019-03-13)
 
