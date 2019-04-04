@@ -111,9 +111,11 @@
     }
   },
   "husky": {
-    "pre-commit": "lint-staged && yarn test:changed",
-    "pre-push": "yarn test:coverage",
-    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    "hooks": {
+      "pre-commit": "lint-staged && yarn test:changed",
+      "pre-push": "yarn test:coverage",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "browserslist": [
     ">0.2%",
