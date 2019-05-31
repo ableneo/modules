@@ -10,9 +10,7 @@ name: Readme
 [![Build Status](https://travis-ci.org/ableneo/modules.svg?branch=master)](https://travis-ci.org/ableneo/modules/packages/eslint-config-ableneo)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![NPM downloads](https://img.shields.io/npm/dt/eslint-config-ableneo.svg)](https://www.npmjs.com/package/eslint-config-ableneo)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
-![GitHub](https://img.shields.io/github/license/ableneo/modules.svg)
 
 This package extends [eslint-config-react-app](https://github.com/facebook/create-react-app/blob/master/packages/eslint-config-react-app/index.js) with prettier.
 
@@ -61,37 +59,63 @@ Plugins:
 
 # Usage
 
-## 1. install config
+## Fist time use
+
+- Commit before installing
+
+- Install the config
+
+- Commit all the changes
+
+- Run `yarn lint:fix`. All the code will be formatted
+
+- Commit all the changes again.
+
+## After first time
+
+- Run `yarn lint:fix` regularly
+- Precommit hook will format the code using `yarn lint:fix` for committed files
+
+## Installation
+
+### Automatic
+
+- config with generator that will setup your environment with testing and linting
 
 ```bash
-yarn add --dev eslint-config-ableneo react-scripts
+yarn add --dev eslint-config-ableneo && npx ncp node_modules/eslint-config-ableneo/_templates/ _templates/ && npx hygen config-eslint new
 ```
 
 or
 
 ```bash
-npm install --save-dev eslint-config-ableneo react-scripts
+npm install --save-dev eslint-config-ableneo react-scripts && npx ncp node_modules/eslint-config-ableneo/_templates/ _templates/ && npx hygen config-eslint new
 ```
 
-If using npm 5+, use this shortcut for installing peerDependencies
+You need to have only one `.eslintrc` file `.eslintrc.yml` was automatically generated please remove any other config from the project
 
-```bash
-npx install-peerdeps --dev eslint-config-ableneo
+After automatic install you do not need to continue with manual install.
+
+### Manual install and setup
+
+- follow these steps only if you want to run
+
+If using npm 5+, use this shortcut for installing minimal peerDependencies
+
+#### Files to copy or modify
+
+- Copy following files to your project
+
+```
+.editorcofing
+.prettierrc
+.eslint.yml
 ```
 
-To allow **typescript** add following devDependencies
+- [Modify package.json based on following file](https://github.com/ableneo/modules/tree/master/packages/eslint-config-ableneo/_templates/new/package.json.t)
+- [Modify .gitignore to contain following ignores](https://www.gitignore.io/api/archive,macos,linux,windows,node,jetbrains,sublimetext,eclipse,netbeans,visualstudiocode,java,gradle,maven)
 
-```bash
-yarn add --dev typescript @typescript-eslint/eslint-plugin@1.x @typescript-eslint/parser@1.x
-```
-
-or
-
-```bash
-npm install --save-dev typescript @typescript-eslint/eslint-plugin@1.x @typescript-eslint/parser@1.x
-```
-
-## 2. extend config
+## Extend config
 
 To extend config use one of the following methods. Recommended is to use `.yaml`.
 
@@ -109,18 +133,10 @@ To extend config use one of the following methods. Recommended is to use `.yaml`
 
 ```yaml
 extends:
-  - eslint-config-ableneo
+  - "eslint-config-ableneo"
 ```
 
-- `.eslintrc.js`
-
-```js
-module.exports = {
-  extends: ["eslint-config-ableneo"],
-};
-```
-
-- `.eslintrc.json`
+- `index.json`
 
 ```json
 {
@@ -128,7 +144,38 @@ module.exports = {
 }
 ```
 
-## 3. lint code
+- `index.ts`
+
+```js
+module.exports = {
+  extends: ["eslint-config-ableneo"],
+};
+```
+
+- full config you are importing
+
+- you are able to add or disable rules
+
+- parts of the config can be disabled, by removing it the config from extends
+
+```js
+const merge = require("merge");
+
+module.exports = {
+  extends: [
+    "eslint-config-ableneo/core",
+    "eslint-config-ableneo/flow",
+    "eslint-config-ableneo/typescript",
+    "eslint-config-ableneo/react",
+  ],
+  rules: merge(
+    require("eslint-config-ableneo/rules/deprecated"),
+    require("eslint-config-ableneo/rules/prettier"),
+  ),
+};
+```
+
+## Lint code
 
 - add to package.json
 
@@ -155,7 +202,7 @@ npm run test
 npm run lint:fix
 ```
 
-## adding or overriding rules
+## Adding or overriding rules
 
 #### support for another plugin like [eslint-plugin-dollar-sign](https://www.npmjs.com/package/eslint-plugin-dollar-sign)
 
@@ -188,7 +235,7 @@ rules:
     - ignoreProperties
 ```
 
-- `.eslintrc.js`
+- `index.ts`
 
 ```js
 module.exports = {
@@ -200,7 +247,7 @@ module.exports = {
 };
 ```
 
-- `.eslintrc.json`
+- `index.json`
 
 ```json
 {

@@ -1,3 +1,6 @@
+---
+to: .editorconfig
+---
 # EditorConfig: http://EditorConfig.org
 # EditorConfig Properties: https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties
 
@@ -35,5 +38,4 @@ trim_trailing_whitespace = false
 # java
 [*.{java,class,groovy,gradle,xml,setting,properties}]
 indent_size=4
-
 

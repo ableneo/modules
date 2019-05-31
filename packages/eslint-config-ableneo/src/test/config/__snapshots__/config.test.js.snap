@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`match eslintrc 1`] = `
+exports[`config full eslintrc.json 1`] = `
 Object {
   "env": Object {
     "browser": true,
@@ -816,7 +816,7 @@ Object {
     "xit": false,
     "xtest": false,
   },
-  "parser": "./node_modules/babel-eslint/lib/index.js",
+  "parser": "[parser]",
   "parserOptions": Object {
     "ecmaFeatures": Object {
       "globalReturn": true,
