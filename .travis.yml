@@ -6,6 +6,9 @@ before_install:
   - export PATH="$HOME/.yarn/bin:$PATH"
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
 
+install:
+  - "yarn install --frozen-lockfile"
+
 after_install:
   - "yarn -v"
 
