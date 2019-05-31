@@ -5,6 +5,9 @@
   "main": "prettier.config.js",
   "author": "Marcel Mokoš <https://github.com/marcelmokos>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ableneo/modules/tree/master/packages/prettier-config"
