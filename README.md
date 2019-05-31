@@ -13,9 +13,9 @@ Javascript Modules monorepo with publishing to https://www.npmjs.com/~ableneo
 
 This repo contains packages used at @ableneo with shared configuration for JavaScript/TypeScript tooling.
 
-## - [`eslint-config-ableneo`](./packages/eslint-config-ableneo/) - ESLint configuration with support for TypeScript, Flow and Prettier integration.
+### - [`eslint-config-ableneo`](./packages/eslint-config-ableneo/) - ESLint configuration with support for TypeScript, Flow and Prettier integration.
 
-## - [`@ableneo/prettier-config`](./packages/prettier-config/) - Prettier configuration file.
+### - [`@ableneo/prettier-config`](./packages/prettier-config/) - Prettier configuration file.
 
 ## How to develop
 
