@@ -1,7 +1,21 @@
 {
-  "vendors.js": "/static/js/vendors.814c07e5.js",
-  "vendors.js.map": "/static/js/vendors.ba4430314c2a807d6ca0.js.map",
-  "app.js": "/static/js/app.ba4430314c2a807d6ca0.js",
-  "app.js.map": "/static/js/app.ba4430314c2a807d6ca0.js.map",
-  "index.html": "/index.html"
+  "vendors.js": "/modules/static/js/vendors.a12b9997.js",
+  "vendors.js.map": "/modules/static/js/vendors.07e482a1e495ff931bae.js.map",
+  "app.js": "/modules/static/js/app.07e482a1e495ff931bae.js",
+  "app.js.map": "/modules/static/js/app.07e482a1e495ff931bae.js.map",
+  "contributing.js": "/modules/static/js/contributing.2180ebb2.js",
+  "contributing.js.map": "/modules/static/js/contributing.07e482a1e495ff931bae.js.map",
+  "license.js": "/modules/static/js/license.6bc5aa8d.js",
+  "license.js.map": "/modules/static/js/license.07e482a1e495ff931bae.js.map",
+  "packages-eslint-config-ableneo-changelog.js": "/modules/static/js/packages-eslint-config-ableneo-changelog.e33b1b73.js",
+  "packages-eslint-config-ableneo-changelog.js.map": "/modules/static/js/packages-eslint-config-ableneo-changelog.07e482a1e495ff931bae.js.map",
+  "packages-eslint-config-ableneo-readme.js": "/modules/static/js/packages-eslint-config-ableneo-readme.b6a0a79f.js",
+  "packages-eslint-config-ableneo-readme.js.map": "/modules/static/js/packages-eslint-config-ableneo-readme.07e482a1e495ff931bae.js.map",
+  "packages-prettier-config-changelog.js": "/modules/static/js/packages-prettier-config-changelog.f181171d.js",
+  "packages-prettier-config-changelog.js.map": "/modules/static/js/packages-prettier-config-changelog.07e482a1e495ff931bae.js.map",
+  "packages-prettier-config-readme.js": "/modules/static/js/packages-prettier-config-readme.ffa2d640.js",
+  "packages-prettier-config-readme.js.map": "/modules/static/js/packages-prettier-config-readme.07e482a1e495ff931bae.js.map",
+  "readme.js": "/modules/static/js/readme.c4423b52.js",
+  "readme.js.map": "/modules/static/js/readme.07e482a1e495ff931bae.js.map",
+  "index.html": "/modules/index.html"
 }
