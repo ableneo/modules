@@ -1,6 +1,6 @@
 {
   "name": "@ableneo/prettier-config",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "@ableneo/modules/prettier-config",
   "main": "prettier.config.js",
   "author": "Marcel Mokoš <https://github.com/marcelmokos>",

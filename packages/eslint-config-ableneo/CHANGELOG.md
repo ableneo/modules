@@ -1,12 +1,13 @@
----
-menu: eslint-config-ableneo
-name: Change log
----
-
 # Change Log
 
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+# [1.1.0](https://github.com/ableneo/modules/tree/master/packages/eslint-config-ableneo/compare/eslint-config-ableneo@1.0.0...eslint-config-ableneo@1.1.0) (2019-05-31)
+
+### Features
+
+- **eslint:** update eslint config ([7d88e17](https://github.com/ableneo/modules/tree/master/packages/eslint-config-ableneo/commit/7d88e17))
 
 # [1.0.0](https://github.com/ableneo/modules/tree/master/packages/eslint-config-ableneo/compare/eslint-config-ableneo@0.0.2...eslint-config-ableneo@1.0.0) (2019-04-03)
 
