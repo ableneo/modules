@@ -136,7 +136,7 @@ extends:
   - "eslint-config-ableneo"
 ```
 
-- `index.json`
+- `eslintrc.json`
 
 ```json
 {
@@ -144,7 +144,7 @@ extends:
 }
 ```
 
-- `index.ts`
+- `eslintrc.js`
 
 ```js
 module.exports = {
