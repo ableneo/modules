@@ -10,6 +10,9 @@ sh: cd <%= cwd %> && yarn
   "types": "dist/index.d.ts",
   "author": "Marcel Mokoš <https://github.com/marcelmokos>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "react-scripts test --watchAll=false",
     "test:changed": "yarn test --onlyChanged --passWithNoTests --silent",
