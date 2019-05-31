@@ -1,5 +1,4 @@
 // https://github.com/nicholasess/docz-example
-import {css} from "docz-plugin-css";
 
 const isProduction = process.env.NODE_ENV === "production";
 
@@ -12,12 +11,10 @@ export default {
       primary: "#166977",
     },
   },
+  propsParser: true,
   typescript: true,
-  plugins: [
-    css({
-      preprocessor: "sass",
-    }),
-  ],
+  codeSandbox: true,
+
   menu: ["Readme"],
   base: isProduction ? "/modules/" : "",
 };

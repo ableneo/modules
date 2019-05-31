@@ -6,20 +6,26 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/ableneo/modules/badge.svg)](https://snyk.io/test/github/ableneo/modules)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![use typescript](https://img.shields.io/badge/use-typescript-blue.svg)](https://www.typescriptlang.org/)
-![GitHub](https://img.shields.io/github/license/ableneo/modules.svg)
 
 # @ableneo/modules
 
-Javascript Tools monorepo with publishing to https://www.npmjs.com/~ableneo
+Javascript Modules monorepo with publishing to https://www.npmjs.com/~ableneo
+
+This repo contains packages used at @ableneo with shared configuration for JavaScript/TypeScript tooling.
+
+## - [`eslint-config-ableneo`](./packages/eslint-config-ableneo/) - ESLint configuration with support for TypeScript, Flow and Prettier integration.
+
+## - [`@ableneo/prettier-config`](./packages/prettier-config/) - Prettier configuration file.
 
 ## How to develop
 
 Open terminal in root of the project and run following command that will start styleguide server `docz` and run watch builds and tests.
+
 ```bash
 yarn run dev
 ```
 
-If you just want `docz` styleguide then run just 
+If you just want `docz` styleguide then run just
 
 ```bash
 yarn run docz:dev
@@ -59,7 +65,7 @@ The commit contains the following structural elements, to communicate intent to 
 
 ## Releasing new version
 
-Code that is merged to `master` will be automatically released by the `travis-ci` pipeline. New version will be determined by the commit names. 
+Code that is merged to `master` will be automatically released by the `travis-ci` pipeline. New version will be determined by the commit names.
 
 # About Ableneo
 

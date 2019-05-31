@@ -1,8 +1,8 @@
 // @flow
-// eslint-disable-next-line
 import React from 'react'
 
-/* eslint-disable no-unused-vars */
+/* eslint no-unused-vars: off */
+/* eslint @typescript-eslint/no-unused-vars: off */
 
 const ComponentZeroProp = () => < input />
 const ComponentZeroProp1 = () => < div ></ div >

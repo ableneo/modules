@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/archive,macos,linux,windows,node,jetbrains,sublimetext,eclipse,netbeans,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=archive,macos,linux,windows,node,jetbrains,sublimetext,eclipse,netbeans,visualstudiocode
+# Created by https://www.gitignore.io/api/archive,macos,linux,windows,node,jetbrains,sublimetext,eclipse,netbeans,visualstudiocode,java,gradle,maven
+# Edit at https://www.gitignore.io/?templates=archive,macos,linux,windows,node,jetbrains,sublimetext,eclipse,netbeans,visualstudiocode,java,gradle,maven
 
 ### Archive ###
 
@@ -15,7 +15,7 @@
 
 # A self-extracting archive that uses the Bourne shell (sh).
 *.shar
-# A system for storing multiple files. LBR archives typically contained files processed by SQ, or the archive itself was compressed with SQ. LBR archives that were compressed with SQ ended with the extension .LQR	
+# A system for storing multiple files. LBR archives typically contained files processed by SQ, or the archive itself was compressed with SQ. LBR archives that were compressed with SQ ended with the extension .LQR
 *.LBR
 # An archive format originally used mainly for archiving and distribution of the exact, nearly-exact, or custom-modified contents of an optical storage medium such as a CD-ROM or DVD-ROM. However, it can be used to archive the contents of other storage media, selected partitions, folders, and/or files. The resulting archive is typically optimized for convenient rendering to (re-)writable CD or DVD media.
 *.iso
@@ -42,7 +42,6 @@
 
 
 ### Eclipse ###
-
 .metadata
 bin/
 tmp/
@@ -110,6 +109,31 @@ local.properties
 .apt_generated
 
 .sts4-cache/
+
+### Java ###
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
 
 ### JetBrains ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
@@ -179,6 +203,9 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
+# JetBrains templates
+**___jb_tmp___
+
 ### JetBrains Patch ###
 # Comment Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-215987721
 
@@ -233,6 +260,18 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
 ### NetBeans ###
 **/nbproject/private/
 **/nbproject/Makefile-*.mk
@@ -246,10 +285,13 @@ nbdist/
 ### Node ###
 # Logs
 logs
-*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Runtime data
 pids
@@ -390,9 +432,28 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/archive,macos,linux,windows,node,jetbrains,sublimetext,eclipse,netbeans,visualstudiocode
+### Gradle ###
+.gradle
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
+
+### Gradle Patch ###
+**/build/
+
+# End of https://www.gitignore.io/api/archive,macos,linux,windows,node,jetbrains,sublimetext,eclipse,netbeans,visualstudiocode,java,gradle,maven
 
 ### Custom .gitignore
 
 .idea
 .docz
+package-lock.json

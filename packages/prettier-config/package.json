@@ -1,0 +1,15 @@
+{
+  "name": "@ableneo/prettier-config",
+  "version": "0.0.0",
+  "description": "@ableneo/modules/prettier-config",
+  "main": "prettier.config.js",
+  "author": "Marcel Mokoš <https://github.com/marcelmokos>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ableneo/modules/tree/master/packages/prettier-config"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-ableneo"
+  }
+}
