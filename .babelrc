@@ -2,7 +2,7 @@
   "presets": [
     ["@babel/preset-env"]
   ],
-  "plugins": [],
+  "plugins": ["emotion"],
   "env": {
     "test": {
       "presets": [

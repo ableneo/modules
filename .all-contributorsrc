@@ -1,5 +1,5 @@
 {
-  "projectName": "tools",
+  "projectName": "modules",
   "projectOwner": "ableneo",
   "repoType": "github",
   "files": ["README.md", "CONTRIBUTING.md"],

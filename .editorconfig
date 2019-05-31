@@ -31,3 +31,7 @@ quote_type = double
 [*.md]
 # do not remove any whitespace characters preceding newline characters
 trim_trailing_whitespace = false
+
+# java
+[*.{java,class,groovy,gradle,xml,setting,properties}]
+indent_size=4
