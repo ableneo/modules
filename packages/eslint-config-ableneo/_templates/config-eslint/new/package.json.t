@@ -5,13 +5,13 @@ sh: cd <%= cwd %> && npx cat package.json > .p.json && npx cat .package.json >> 
 {
   "scripts": {
     "test": "react-scripts test --watchAll=false",
-    "test:changed": "yarn test --onlyChanged --passWithNoTests --silent",
+    "test:changed": "yarn run test --onlyChanged --passWithNoTests --silent",
     "test:watch": "react-scripts test",
-    "test:update": "yarn test --updateSnapshot",
-    "test:coverage": "yarn test --coverage --verbose --passWithNoTests --silent",
+    "test:update": "yarn run test --updateSnapshot",
+    "test:coverage": "yarn run test --coverage --verbose --passWithNoTests --silent",
     "lintstaged": "lint-staged",
     "lint": "eslint . --cache --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "yarn run prettier && yarn lint --fix",
+    "lint:fix": "yarn run prettier && yarn run lint --fix",
     "lint:img": "find . -iname '*.gif' -o -iname '*.jpg' -o -iname '*.png' -o -iname '*.jpeg' -o -iname '*.svg' | xargs imagemin-lint-staged",
     "lint:staged": "eslint --fix --max-warnings=0",
     "prettier": "prettier --write **/*.{js,jsx,html,md,mdx,yaml,json,css,scss,less}"
