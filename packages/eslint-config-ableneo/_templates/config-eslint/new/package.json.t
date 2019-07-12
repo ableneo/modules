@@ -14,7 +14,7 @@ sh: cd <%= cwd %> && npx cat package.json > .p.json && npx cat .package.json >> 
     "lint:fix": "yarn run prettier && yarn run lint --fix",
     "lint:img": "find . -iname '*.gif' -o -iname '*.jpg' -o -iname '*.png' -o -iname '*.jpeg' -o -iname '*.svg' | xargs imagemin-lint-staged",
     "lint:staged": "eslint --fix --max-warnings=0",
-    "prettier": "prettier --write **/*.{js,jsx,html,md,mdx,yaml,json,css,scss,less}"
+    "prettier": "prettier --write **/*.{js,jsx,html,md,mdx,yaml,json,css,scss,less,ts,tsx}"
   },
   "devDependencies": {
     "@types/jest": "latest",
