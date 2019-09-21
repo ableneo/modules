@@ -1,6 +1,6 @@
 {
   "name": "hygen-eslint-config-ableneo",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "@ableneo/modules/hygen-eslint-config-ableneo",
   "author": "Marcel Mokoš <https://github.com/marcelmokos>",
   "license": "MIT",
@@ -16,9 +16,6 @@
     "lint": "cd ../.. && yarn run lint",
     "lint:fix": "cd ../.. && yarn run lint:fix"
   },
-  "dependencies": {},
-  "devDependencies": {},
-  "peerDependencies": {},
   "engines": {
     "node": ">=8.10"
   },

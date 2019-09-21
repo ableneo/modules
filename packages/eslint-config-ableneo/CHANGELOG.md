@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/ableneo/modules/tree/master/packages/eslint-config-ableneo/compare/eslint-config-ableneo@1.1.0...eslint-config-ableneo@2.0.0) (2019-09-21)
+
+### Bug Fixes
+
+- **eslint-config-ableneo:** broken snapshot test ([c13863e](https://github.com/ableneo/modules/tree/master/packages/eslint-config-ableneo/commit/c13863e))
+- **eslint-config-ableneo:** broken snapshot test ([c102c82](https://github.com/ableneo/modules/tree/master/packages/eslint-config-ableneo/commit/c102c82))
+
+### Features
+
+- **eslint-config-ableneo:** update config to eslint v6 ([afd0953](https://github.com/ableneo/modules/tree/master/packages/eslint-config-ableneo/commit/afd0953))
+- **hygen-eslint-config-ableneo:** create independent generator ([bdc9de5](https://github.com/ableneo/modules/tree/master/packages/eslint-config-ableneo/commit/bdc9de5))
+
+### BREAKING CHANGES
+
+- **hygen-eslint-config-ableneo:** generator is no longer part of the eslint-config-ableneo but a stand alone package hygen-eslint-config-ableneo
+- **eslint-config-ableneo:** updated eslint to v6
+
 # [1.1.0](https://github.com/ableneo/modules/tree/master/packages/eslint-config-ableneo/compare/eslint-config-ableneo@1.0.0...eslint-config-ableneo@1.1.0) (2019-05-31)
 
 ### Features
