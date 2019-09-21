@@ -10,12 +10,12 @@ describe("default config", () => {
       expect(result.output).toMatchInlineSnapshot(`
         "// @flow
         import React from \\"react\\";
-        
+
         /* eslint no-unused-vars: off */
         /* eslint @typescript-eslint/no-unused-vars: off */
-        
+
         const ComponentZeroProp = () => <input />;
-        const ComponentZeroProp1 = () => <div />;
+        const ComponentZeroProp1 = () => <div></div>;
         const ComponentOneProp = one => <input one={one} />;
         const ComponentTwoProp = (one, two) => <input one={one} two={two} />;
         const ComponentTreeProp = (one, two, tree) => (
@@ -41,7 +41,7 @@ describe("default config", () => {
             seven={seven}
           />
         );
-        
+
         const ComponentText0 = () => <input text=\\"some text\\" />;
         const ComponentText1 = () => <input text={\\"some text\\"} />;
         const ComponentText2 = () => <input text=\\"some text\\" />;
@@ -51,13 +51,13 @@ describe("default config", () => {
         const ComponentText6 = () => <input text='\\"some\\" text' />;
         const ComponentText7 = text => <input text={\\"'some' \\" + text + \\" text\\"} />;
         const ComponentText8 = text => <input text={\`\${text}\`} />;
-        
+
         const array = [];
         const array1 = [\\"\\"];
         const array2 = [\\"one\\", \\"two\\"];
         const array3 = [\\"one\\", \\"two\\", \\"tree\\"];
         const array4 = [\\"one\\", \\"two\\", \\"tree\\"];
-        
+
         const object = {};
         const object1 = {\\"1\\": \\"test\\"};
         const object2 = {\\"1\\": \\"test\\"};
@@ -68,27 +68,27 @@ describe("default config", () => {
           \\"2\\": \\"test\\",
         };
         const x = a => (a ? 1 : 2);
-        
+
         function testNewLineBeforeReturn(z) {
           const y = z;
-        
+
           return y;
         }
-        
+
         type X = {x: string};
-        
+
         type Y = {
           y: string,
         };
-        
+
         type XY = X & Y;
         type XYZ = XY & {z: string};
-        
+
         const handleSizeValue = 1;
         const percentage = 1;
-        
+
         const offset = (handleSizeValue / 2) * (1 - percentage / 0.5);
-        
+
         export const mod = (dividend: number, divisor: number): number =>
           ((dividend % divisor) + divisor) % divisor;
         /* eslint-enable no-unused-vars */
@@ -104,11 +104,11 @@ describe("default config", () => {
 
       expect(result.output).toMatchInlineSnapshot(`
         "import React from \\"react\\";
-        
+
         /* eslint @typescript-eslint/no-unused-vars: off */
-        
+
         const ComponentZeroProp = () => <input />;
-        const ComponentZeroProp1 = () => <div />;
+        const ComponentZeroProp1 = () => <div></div>;
         const ComponentOneProp = one => <input one={one} />;
         const ComponentTwoProp = (one, two) => <input one={one} two={two} />;
         const ComponentTreeProp = (one, two, tree) => (
@@ -134,7 +134,7 @@ describe("default config", () => {
             seven={seven}
           />
         );
-        
+
         const ComponentText0 = () => <input text=\\"some text\\" />;
         const ComponentText1 = () => <input text={\\"some text\\"} />;
         const ComponentText2 = () => <input text=\\"some text\\" />;
@@ -144,13 +144,13 @@ describe("default config", () => {
         const ComponentText6 = () => <input text='\\"some\\" text' />;
         const ComponentText7 = text => <input text={\\"'some' \\" + text + \\" text\\"} />;
         const ComponentText8 = text => <input text={\`\${text}\`} />;
-        
+
         const array = [];
         const array1 = [\\"\\"];
         const array2 = [\\"one\\", \\"two\\"];
         const array3 = [\\"one\\", \\"two\\", \\"tree\\"];
         const array4 = [\\"one\\", \\"two\\", \\"tree\\"];
-        
+
         const object = {};
         const object1 = {\\"1\\": \\"test\\"};
         const object2 = {\\"1\\": \\"test\\"};
@@ -161,29 +161,29 @@ describe("default config", () => {
           \\"2\\": \\"test\\",
         };
         const x = a => (a ? 1 : 2);
-        
+
         function testNewLineBeforeReturn(z) {
           const y = z;
-        
+
           return y;
         }
-        
+
         interface X {
           x: string;
         }
-        
+
         interface Y {
           y: string;
         }
-        
+
         type XY = X & Y;
         type XYZ = XY & {z: string};
-        
+
         const handleSizeValue = 1;
         const percentage = 1;
-        
+
         const offset = (handleSizeValue / 2) * (1 - percentage / 0.5);
-        
+
         export const mod = (dividend: number, divisor: number): number =>
           ((dividend % divisor) + divisor) % divisor;
         /* eslint-enable no-unused-vars */

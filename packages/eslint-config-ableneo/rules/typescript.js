@@ -28,4 +28,7 @@ module.exports = {
   // Typescript with components composition is complicated to type without any
   // https://github.com/bradzacher/eslint-plugin-typescript/blob/master/docs/rules/no-explicit-any.md
   "@typescript-eslint/no-explicit-any": "off",
+  // Empty method is useful in react default props
+  // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md
+  "@typescript-eslint/no-empty-function": "off",
 };
