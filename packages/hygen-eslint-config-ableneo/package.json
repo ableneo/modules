@@ -1,0 +1,32 @@
+{
+  "name": "hygen-eslint-config-ableneo",
+  "version": "0.0.0",
+  "description": "@ableneo/modules/hygen-eslint-config-ableneo",
+  "author": "Marcel Mokoš <https://github.com/marcelmokos>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "react-scripts test --watchAll=false",
+    "test:changed": "yarn test --onlyChanged --passWithNoTests --silent",
+    "test:watch": "react-scripts test",
+    "test:update": "yarn test --updateSnapshot",
+    "test:coverage": "yarn test --coverage --verbose --passWithNoTests --silent",
+    "lint": "cd ../.. && yarn run lint",
+    "lint:fix": "cd ../.. && yarn run lint:fix"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "engines": {
+    "node": ">=8.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ableneo/modules/tree/master/packages/hygen-eslint-config-ableneo"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-ableneo"
+  }
+}

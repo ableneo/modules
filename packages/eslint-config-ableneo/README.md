@@ -83,13 +83,13 @@ Plugins:
 - config with generator that will setup your environment with testing and linting
 
 ```bash
-yarn add --dev eslint-config-ableneo && npx ncp node_modules/eslint-config-ableneo/_templates/ _templates/ && npx hygen config-eslint new
+yarn add --dev eslint-config-ableneo && npx hygen-add eslint-config-ableneo && npx hygen init-config new
 ```
 
 or
 
 ```bash
-npm install --save-dev eslint-config-ableneo react-scripts && npx ncp node_modules/eslint-config-ableneo/_templates/ _templates/ && npx hygen config-eslint new
+npm install --save-dev eslint-config-ableneo react-scripts && npx hygen-add eslint-config-ableneo && npx hygen init-config new
 ```
 
 You need to have only one `.eslintrc` file `.eslintrc.yml` was automatically generated please remove any other config from the project

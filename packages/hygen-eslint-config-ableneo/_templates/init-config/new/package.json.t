@@ -14,34 +14,33 @@ sh: cd <%= cwd %> && npx cat package.json > .p.json && npx cat .package.json >> 
     "lint:fix": "yarn run prettier && yarn run lint --fix",
     "lint:img": "find . -iname '*.gif' -o -iname '*.jpg' -o -iname '*.png' -o -iname '*.jpeg' -o -iname '*.svg' | xargs imagemin-lint-staged",
     "lint:staged": "eslint --fix --max-warnings=0",
-    "prettier": "prettier --write **/*.{js,jsx,html,md,mdx,yaml,json,css,scss,less,ts,tsx}"
+    "prettier": "prettier --write **/*.{js,jsx,ts,tsx,html,md,mdx,yaml,json,css,scss,less}"
   },
   "devDependencies": {
     "@types/jest": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "husky": "^2.1.0",
+    "eslint-config-ableneo": "latest",
+    "husky": "^3.0.5",
     "imagemin-lint-staged": "^0.4.0",
-    "lint-staged": "^8.x",
+    "lint-staged": "^9.2.5",
     "react-scripts": "^3.x",
-    "typescript": "3.3.x"
+    "typescript": "3.x"
   },
   "lint-staged": {
-    "linters": {
-      "*.{js,jsx,ts,tsx}": [
-        "yarn run lint:staged",
-        "git add"
-      ],
-      "*.{html,md,mdx,yaml,json,css,scss,less}": [
-        "prettier --write",
-        "git add"
-      ],
-      "*.{png,jpeg,jpg,gif,svg}": [
-        "imagemin-lint-staged",
-        "git add"
-      ]
-    }
+    "*.{js,jsx,ts,tsx}": [
+      "yarn run lint:staged",
+      "git add"
+    ],
+    "*.{html,md,mdx,yaml,json,css,scss,less}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{png,jpeg,jpg,gif,svg}": [
+      "imagemin-lint-staged",
+      "git add"
+    ]
   },
   "husky": {
     "hooks": {

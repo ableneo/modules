@@ -8,9 +8,9 @@ const defaultProps = {
   C: () => <div>c</div>,
   children: ({fn, voidFn, A, B, C, ...otherProps}) => (
     <>
-          <A onClick={fn} />
-          <B />
-          <C />
+      <A onClick={fn} />
+      <B />
+      <C />
     </>
   ),
 };
