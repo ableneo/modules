@@ -1,0 +1,46 @@
+{
+  "name": "hygen-react-component",
+  "version": "0.0.0",
+  "description": "@ableneo/modules/hygen-react-component",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
+  "author": "Marcel Mokoš <https://github.com/marcelmokos>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "react-scripts test --watchAll=false --passWithNoTests",
+    "test:changed": "yarn test --onlyChanged --passWithNoTests --silent",
+    "test:watch": "react-scripts test",
+    "test:update": "yarn test --updateSnapshot",
+    "test:coverage": "yarn test --coverage --verbose --passWithNoTests --silent",
+    "lint": "cd ../.. && yarn run lint",
+    "lint:fix": "cd ../.. && yarn run lint:fix",
+    "generate:component": "hygen component with-prompt\n"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@emotion/core": ">=10.0.0",
+    "@emotion/styled": ">=10.0.0",
+    "emotion": ">=10.0.0",
+    "hygen": "^4.0.9",
+    "react": ">=16.8.0"
+  },
+  "peerDependencies": {
+    "@emotion/core": ">=10.0.0",
+    "@emotion/styled": ">=10.0.0",
+    "emotion": ">=10.0.0",
+    "react": ">=16.8.0"
+  },
+  "engines": {
+    "node": ">=8.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ableneo/modules/tree/master/packages/hygen-react-component"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-ableneo"
+  }
+}
