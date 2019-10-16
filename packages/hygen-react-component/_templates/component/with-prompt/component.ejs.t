@@ -17,7 +17,7 @@ const defaultProps = {
   `,
 };
 
-type Props = typeof defaultProps & {};
+type Props = Readonly<typeof defaultProps & {}>;
 
 type Children = (props: Props) => JSX.Element;
 export const <%= ComponentName %> = ({children, ...props}: {children: Children} & Props) =>
