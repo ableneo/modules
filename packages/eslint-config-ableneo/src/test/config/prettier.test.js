@@ -16,7 +16,7 @@ describe("default config", () => {
 
         const ComponentZeroProp = () => <input />;
         const ComponentZeroProp1 = () => <div></div>;
-        const ComponentOneProp = one => <input one={one} />;
+        const ComponentOneProp = (one) => <input one={one} />;
         const ComponentTwoProp = (one, two) => <input one={one} two={two} />;
         const ComponentTreeProp = (one, two, tree) => (
           <input one={one} two={two} tree={tree} />
@@ -49,8 +49,8 @@ describe("default config", () => {
         const ComponentText4 = () => <input text={\\"'some' text\\"} />;
         const ComponentText5 = () => <input text={\\"'some' text\\"} />;
         const ComponentText6 = () => <input text='\\"some\\" text' />;
-        const ComponentText7 = text => <input text={\\"'some' \\" + text + \\" text\\"} />;
-        const ComponentText8 = text => <input text={\`\${text}\`} />;
+        const ComponentText7 = (text) => <input text={\\"'some' \\" + text + \\" text\\"} />;
+        const ComponentText8 = (text) => <input text={\`\${text}\`} />;
 
         const array = [];
         const array1 = [\\"\\"];
@@ -67,7 +67,7 @@ describe("default config", () => {
           \\"1\\": \\"test\\",
           \\"2\\": \\"test\\",
         };
-        const x = a => (a ? 1 : 2);
+        const x = (a) => (a ? 1 : 2);
 
         function testNewLineBeforeReturn(z) {
           const y = z;
@@ -109,7 +109,7 @@ describe("default config", () => {
 
         const ComponentZeroProp = () => <input />;
         const ComponentZeroProp1 = () => <div></div>;
-        const ComponentOneProp = one => <input one={one} />;
+        const ComponentOneProp = (one) => <input one={one} />;
         const ComponentTwoProp = (one, two) => <input one={one} two={two} />;
         const ComponentTreeProp = (one, two, tree) => (
           <input one={one} two={two} tree={tree} />
@@ -142,8 +142,8 @@ describe("default config", () => {
         const ComponentText4 = () => <input text={\\"'some' text\\"} />;
         const ComponentText5 = () => <input text={\\"'some' text\\"} />;
         const ComponentText6 = () => <input text='\\"some\\" text' />;
-        const ComponentText7 = text => <input text={\\"'some' \\" + text + \\" text\\"} />;
-        const ComponentText8 = text => <input text={\`\${text}\`} />;
+        const ComponentText7 = (text) => <input text={\\"'some' \\" + text + \\" text\\"} />;
+        const ComponentText8 = (text) => <input text={\`\${text}\`} />;
 
         const array = [];
         const array1 = [\\"\\"];
@@ -160,7 +160,7 @@ describe("default config", () => {
           \\"1\\": \\"test\\",
           \\"2\\": \\"test\\",
         };
-        const x = a => (a ? 1 : 2);
+        const x = (a) => (a ? 1 : 2);
 
         function testNewLineBeforeReturn(z) {
           const y = z;
@@ -196,7 +196,38 @@ describe("default config", () => {
 
       expect(report.errorCount).toBe(0);
       expect(report.warningCount).toBe(0);
-      expect(report.usedDeprecatedRules).toEqual([]);
+      /*
+       * maintain zero deprecated rules
+       * since deprecated rules are recommended. Update typescript-eslint regularly.
+       */
+      expect(report.usedDeprecatedRules).toMatchInlineSnapshot(`
+        Array [
+          Object {
+            "replacedBy": Array [
+              "@typescript-eslint/ban-ts-comment",
+            ],
+            "ruleId": "@typescript-eslint/ban-ts-ignore",
+          },
+          Object {
+            "replacedBy": Array [
+              "naming-convention",
+            ],
+            "ruleId": "@typescript-eslint/camelcase",
+          },
+          Object {
+            "replacedBy": Array [
+              "naming-convention",
+            ],
+            "ruleId": "@typescript-eslint/class-name-casing",
+          },
+          Object {
+            "replacedBy": Array [
+              "naming-convention",
+            ],
+            "ruleId": "@typescript-eslint/interface-name-prefix",
+          },
+        ]
+      `);
     });
   });
 });

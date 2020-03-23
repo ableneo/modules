@@ -19,8 +19,8 @@ addEnvFile({pathEnvTarget: envName});
 const packagesFolder = path.join(process.cwd(), "packages");
 
 fs.readdirSync(packagesFolder)
-  .filter(packageName => !packageName.includes("."))
-  .forEach(packageName => {
+  .filter((packageName) => !packageName.includes("."))
+  .forEach((packageName) => {
     const pathEnvTarget = path.join(packagesFolder, packageName, envName);
 
     addEnvFile({pathEnvTarget});

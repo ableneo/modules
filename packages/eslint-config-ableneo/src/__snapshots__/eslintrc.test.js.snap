@@ -11,6 +11,7 @@ Object {
     "node": true,
   },
   "globals": Object {},
+  "ignorePatterns": Array [],
   "parser": "./node_modules/babel-eslint/lib/index.js",
   "parserOptions": Object {
     "ecmaFeatures": Object {
@@ -48,6 +49,9 @@ Object {
     "@typescript-eslint/class-name-casing": Array [
       "error",
     ],
+    "@typescript-eslint/comma-spacing": Array [
+      "off",
+    ],
     "@typescript-eslint/consistent-type-assertions": Array [
       "error",
     ],
@@ -82,6 +86,9 @@ Object {
       "off",
     ],
     "@typescript-eslint/no-extra-parens": Array [
+      "off",
+    ],
+    "@typescript-eslint/no-extra-semi": Array [
       "off",
     ],
     "@typescript-eslint/no-inferrable-types": Array [
@@ -124,6 +131,9 @@ Object {
       0,
     ],
     "@typescript-eslint/semi": Array [
+      "off",
+    ],
+    "@typescript-eslint/space-before-function-paren": Array [
       "off",
     ],
     "@typescript-eslint/triple-slash-reference": Array [
@@ -334,11 +344,17 @@ Object {
     "indent-legacy": Array [
       "off",
     ],
-    "jest/no-alias-methods": Array [
+    "jest/expect-expect": Array [
+      "warn",
+    ],
+    "jest/no-commented-out-tests": Array [
       "warn",
     ],
     "jest/no-disabled-tests": Array [
       "warn",
+    ],
+    "jest/no-export": Array [
+      "error",
     ],
     "jest/no-focused-tests": Array [
       "error",
@@ -352,7 +368,19 @@ Object {
     "jest/no-jest-import": Array [
       "error",
     ],
+    "jest/no-mocks-import": Array [
+      "error",
+    ],
+    "jest/no-standalone-expect": Array [
+      "error",
+    ],
+    "jest/no-test-callback": Array [
+      "error",
+    ],
     "jest/no-test-prefixes": Array [
+      "error",
+    ],
+    "jest/no-try-expect": Array [
       "error",
     ],
     "jest/valid-describe": Array [
@@ -1102,9 +1130,6 @@ Object {
     ],
     "react/style-prop-object": Array [
       "warn",
-    ],
-    "require-atomic-updates": Array [
-      "error",
     ],
     "require-yield": Array [
       "warn",

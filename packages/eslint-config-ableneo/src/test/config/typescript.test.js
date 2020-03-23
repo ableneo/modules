@@ -7,7 +7,7 @@ describe("typescript", () => {
 
       expect(report.errorCount).toBe(0);
       expect(report.warningCount).toBe(0);
-      report.results.forEach(res => {
+      report.results.forEach((res) => {
         expect(res.messages).toEqual([]);
       });
     });
