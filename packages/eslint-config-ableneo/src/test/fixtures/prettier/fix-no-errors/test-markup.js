@@ -59,6 +59,7 @@ type X = { x: string, }
 type Y = {
   y: string
 
+
 }
 
 type XY = X & Y;
