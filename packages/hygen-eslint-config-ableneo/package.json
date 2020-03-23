@@ -8,9 +8,9 @@
     "access": "public"
   },
   "scripts": {
-    "test": "react-scripts test --watchAll=false",
+    "test": "react-scripts test --watchAll=false --passWithNoTests",
     "test:changed": "yarn test --onlyChanged --passWithNoTests --silent",
-    "test:watch": "react-scripts test",
+    "test:watch": "react-scripts test --onlyChanged --passWithNoTests --silent",
     "test:update": "yarn test --updateSnapshot",
     "test:coverage": "yarn test --coverage --verbose --passWithNoTests --silent",
     "lint": "cd ../.. && yarn run lint",

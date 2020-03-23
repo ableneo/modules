@@ -1,9 +1,8 @@
 import React from "react";
 
-
 const defaultProps = {
-  fn: value => value,
-  voidFn: value => {},
+  fn: (value) => value,
+  voidFn: (value) => {},
   A: () => <div>a</div>,
   B: () => <div>b</div>,
   C: () => <div>c</div>,

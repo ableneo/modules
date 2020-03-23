@@ -1,6 +1,6 @@
 const anotherThing = "foo";
 
-export const foo = something => {
+export const foo = (something) => {
   if (!something) {
     return null;
   }
